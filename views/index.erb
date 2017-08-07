@@ -3,7 +3,7 @@
   <head>
     <style>
       body {
-        background: red;
+        background: #CA3333;
       }
       </style>
   </head>
@@ -20,10 +20,22 @@
       <% if message == "You got it right!" %>
         The SECRET NUMBER is <%= number %>
         <style>
-          body {
-            background: green;
-          }
+            body {
+              background: green;
+            }
           </style>
+      <% elsif message == "Way too low!" || message == "Way too high!" %>
+        <style>
+          body {
+            background: #FA2B2B;
+          }
+        </style>
+      <% elsif message == "Too low!" || message == "Too high!" %>
+        <style>
+          body {
+            background: #EAC5C5;
+          }
+        </style>
       <% end %>
     </p>
   </body>
